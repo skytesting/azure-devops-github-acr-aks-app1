@@ -78,7 +78,7 @@ stages:
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
-                $(containerRegistry)/$(imageRepository):$(tag)
+                $(containerRegistry)/$(imageRepository)
 
   - deployment: DeployPullRequest
     displayName: Deploy Pull request
@@ -119,7 +119,7 @@ stages:
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
-                $(containerRegistry)/$(imageRepository):$(tag)
+                $(containerRegistry)/$(imageRepository)
 
           - task: Kubernetes@1
             name: get
