@@ -13,7 +13,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '5a325f96-fa72-43b5-8168-de45327e3f0b'
   imageRepository: 'app1nginxaks'
-  containerRegistry: 'aksdevopsacr.azurecr.io'
+  containerRegistry: 'spica.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'spica1e5b-auth'
